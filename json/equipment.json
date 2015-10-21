@@ -1,0 +1,62 @@
+{
+  "city_name": "lj city",
+  "cameras": [
+    {
+      "model": "Sony 4k",
+      "pic": "img/sony_4k_whitebg.png",
+      "description": "this sony is the best camera we have.",
+      "available": 1,
+      "with": "none",
+
+      "video capabilities": "1920x1080 60fps, 1920x1080 30fps, 1920x1080 24fps, 1280x720 60fps",
+      "battery duration": "5 hours",
+      "weight": "6lbs"
+    },
+    {
+      "model": "Panasonic #1",
+      "pic": "img/panasonic_1_whitebg.png",
+      "description": "this panasonic is not great but its good enough for most stuff.",
+      "available": 1,
+      "with": "none"
+    },
+    {
+      "model": "Panasonic #2",
+      "pic": "img/panasonic_2_whitebg.png",
+      "description": "this will do.",
+      "available": 1,
+      "with": "none"
+    }
+  ],
+  
+  "mics": [
+    {
+      "model": "generic mic 1",
+      "pic": "img/placeholder_320.png",
+      "description": "this is the description for the generic mic 1 mic",
+      "available": 1,
+      "with": "none"
+    },
+    {
+      "model": "generic mic 2",
+      "pic": "img/placeholder_320.png",
+      "description": "this is the description for the generic mic 1 mic",
+      "available": 1,
+      "with": "none"
+    },
+    {
+      "model": "generic mic 3",
+      "pic": "img/placeholder_320.png",
+      "description": "this is the description for the generic mic 3 mic",
+      "available": 1,
+      "with": "none"
+    },
+    {
+      "model": "generic mic 4",
+      "pic": "img/placeholder_320.png",
+      "description": "this is the description for the generic mic 4 mic",
+      "available": 1,
+      "with": "none"
+    }
+  ]
+
+}

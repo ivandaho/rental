@@ -1,0 +1,81 @@
+/* Initial body */
+html {
+  height:100%;
+  min-height: 100%;
+
+}
+body {
+  height:100%;
+  min-height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+
+  color: #000;
+  font-family: 'SaniTrixieSansRegular', sans-serif;
+}
+
+/* Initial menu */
+
+/* Basic styling */
+
+.jumbotron {
+  position: absolute;
+  top:0px;
+  height: 100%;
+  width: 100%;
+  //background-image: url('../img/bg_caps.jpg');
+
+  //https://c4.staticflickr.com/8/7603/17019902577_18c372b822_k.jpg');
+  // provisions pic: http://i.imgur.com/HypCIt3.jpg
+  // debug half blue/red pic:  http://i.imgur.com/4E1MDV3.png
+  // cat pic: http://i.imgur.com/fQVUJaq.jpg
+}
+.main{
+  min-width: 100%;
+  width: 100%;
+}
+
+.header h1 {
+   font-color: #000;
+   font-size: 30px;
+   font-weight: bold;
+   text-transform: lowercase;
+}
+
+.container {
+  margin-bottom: 80px;
+  max-width: 100%;
+  width: 800px;
+  //left: 50px;
+
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  display: inline-block;
+  //margin: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #afafaf;
+}
+.itemicon {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 190px;
+}
+.itemname {
+  margin-top:5px;
+  margin-bottom:5px;
+}

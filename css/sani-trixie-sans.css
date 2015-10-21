@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'SaniTrixieSansRegular';
+        src: url('../fonts/SaniTrixieSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+
+/* The following rules are deprecated. */
+
+@font-face {
+    font-family: 'Sani Trixie Sans';
+        src: url('../fonts/SaniTrixieSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+

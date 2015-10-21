@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- temp unused font
+ <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/gen-light" rel="stylesheet" type="text/css"/> 
+    -->
+    <link rel="stylesheet" media="screen" href="./css/sani-trixie-sans.css" rel="stylesheet" type="text/css"/>
+    <link href="./css/index.css" rel='stylesheet'>
+    <title>app</title>
+    <script src="./js/req/angular.js"></script>
+  </head>
+  <body ng-app="MainApp">
+
+
+  <!--main body-->
+  <div class="jumbotron">
+
+    <div class="main" ng-controller="MainController">
+      <div class="card" ng-repeat="camera in data.cameras"> 
+        <camera-info info="camera"></camera-info>
+        <select-app></select-app> <!-- select button -->
+      </div>
+
+      </br>
+      </br>
+      Microphones: 
+      </br>
+
+      <div class="card" ng-repeat="mic in data.mics"> 
+        <mic-info info="mic"></mic-info>
+        <select-app></select-app>
+      </div>
+
+      <div class="bucket">
+        Your bucket: {{ testvar }}
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./js/req/jquery.min.js"></script>
+  <script src="./js/wat.js"></script>
+
+  <!-- Modules -->
+  <script src="./js/app.js"></script>
+
+  <!-- Controllers -->
+  <script src="./js/controllers/MainController.js"></script>
+
+  <!-- Directives -->
+  <script src="./js/directives/cameraInfo.js"></script>
+  <script src="./js/directives/micInfo.js"></script>
+  <script src="./js/directives/selectApp.js"></script>
+
+  <!-- Services -->
+  <script src="./js/services/equipment.js"></script>
+
+  </body>
+</html>
