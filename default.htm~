@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
     <!--<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js" type="text/javascript" ></script>-->
 
@@ -36,6 +37,12 @@
         (12 columns: span 10, offset 1 centers the content and adds a margin on each side)
     -->
 
+    <div class="container">
+        <div class="row">
+            <div class="span4">span4</div>
+            <div class="span8">span8</div>
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span10 offset1">
