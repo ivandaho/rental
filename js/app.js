@@ -2,6 +2,7 @@
 
 // App Module: the name AngularStore matches the ng-app attribute in the main <html> tag
 // the route provides parses the URL and injects the appropriate partial page
+var defilter = '.camera, .mic';
 var storeApp = angular.module('AngularStore', ['ngRoute']).
   config(['$routeProvider', function($routeProvider) {
   $routeProvider.
@@ -20,7 +21,31 @@ var storeApp = angular.module('AngularStore', ['ngRoute']).
       otherwise({
         redirectTo: '/store'
       });
-}]);
+}])
+.directive('mixItUp', function() {
+    return {
+        restrict: 'AEC',
+        templateUrl: 'partials/mix-it-up-tpl.html',
+        link: function(scope, element) {
+            $(element).mixItUp(
+                {
+                    load: {
+                        filter: '.camera'
+                    }
+                    /*
+                    controls: {
+                        toggleFilterButtons: true,
+                        toggleLogic: 'or'
+                    }
+            */
+
+            }
+           );
+            
+        }
+    }
+});
+
 
 
 // create a data service that provides a store and a shopping cart that

@@ -48,13 +48,15 @@ shoppingCart.prototype.saveItems = function () {
     }
 }
 
+shoppingCart.prototype.testfunc = function () {
+    return 0;
+}
 // adds an item to the cart
 shoppingCart.prototype.addItem = function (sku, name, price, quantity) {
 
     quantity = this.toNumber(quantity);
     if (quantity != 0) {
-        // if have
-
+        // if already exists in cart
         // update quantity for existing item
         var found = false;
         var itempos;
@@ -78,19 +80,6 @@ shoppingCart.prototype.addItem = function (sku, name, price, quantity) {
 
 
 //test = "no";
-
-shoppingCart.prototype.testfunc = function() {
-    //element.toggleClass('btn-active');
-        if(scope.selected) {
-            scope.buttontype = "active";
-            scope.buttonText = "Select";
-            scope.selected = false;
-        } else {
-            scope.buttontype = "success";
-            scope.buttonText = "Deselect";
-            scope.selected = true; 
-        }
-}
 
 shoppingCart.prototype.addItemOld = function (sku, name, price, quantity) {
     quantity = this.toNumber(quantity);
@@ -149,12 +138,22 @@ shoppingCart.prototype.getHL = function (sku) {
     for (var i = 0; i < this.items.length; i++) {
         var item = this.items[i];
         if (item.sku == sku) {
-            color = "green";
+            color = "border-color: green";
             break;
         } else {
-            color = "white";
+            color = "border-color: #d5d5d5";
         }
     }
+    return color;
+}
+
+shoppingCart.prototype.colorize = function (cat) {
+    var color;
+        if (cat == "camera") {
+            color = "#7FC29B";
+        } else if (cat == "mic") {
+            color = "#B5C2B7";
+        }
     return color;
 }
 

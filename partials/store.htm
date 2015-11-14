@@ -1,41 +1,66 @@
 <p class="text-info">
-    Welcome to the Angular Store.<br />
-    Please select the products you want and add them to your shopping cart.<br />
+    Please select the items you want and add them to your cart.<br />
     When you are done, click the shopping cart icon to review your order and check out.
 </p>
 
 <p>
-    Search: <input ng-model="search">
+    <input type="text" id="input" placeholder="search for an item" >
 </p>
 
 <div class="well">
-    <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+    <a href="index.html#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
         <i class="icon-shopping-cart" />
         <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
     </a>
 </div>
-<div class="container">
 
-</div>
-<div class="row">
     <!-- new stuff -->
-    <div class ="col-md-4" ng-repeat="gear in store.equipment | orderBy:'brand' | filter:search" >
-        <div class = "cell" style="background-color:{{cart.getHL(gear.sku)}}; cursor: pointer" ng-click="cart.addItem(gear.sku, gear.name, gear.ava, 1); colorchange(gear.sku)"
+
+    <!-- mixitup -->
+    <script src="js/req/jquery.mixitup.min.js" type="text/javascript"></script>
+    
+    
+<div class="controls">
+  <label>Filter:</label>
+  
+  <button class="filter" data-filter=".camera">Cameras</button>
+  <button class="filter" data-filter=".mic">Microphones</button>
+  
+  <label>Sort:</label>
+  
+  <button class="sort" data-sort="myorder:asc">Asc</button>
+  <button class="sort" data-sort="myorder:desc">Desc</button>
+</div>
+<div mix-it-up></div>
+<!--
+<div id="Container" class="container">
+    div class="mix category-1" ng-repeat="gear in store.equipment | orderBy:'brand' | filter:search" 
+                            style="{{cart.getHL(gear.sku)}};
+                                  cursor: pointer;
+                                  background-color: {{cart.colorize(gear.cat)}}"
+                            ng-click="cart.addItem(gear.sku, gear.name, gear.ava, 1); colorchange(gear.sku)"
                 onmouseover = "" >
             <img ng-src="img/products/{{gear.sku}}.png" alt="{{gear.name}}" />
         <div class="descbox">
             <a href="#/products/{{gear.sku}}"><b>{{gear.brand}} {{gear.name}}</b></a>
             <br>
-            {{gear.desc}}
+ this line....................
+            -->
+            <!--
+            <div class="desctext">
+                {{gear.desc}} {{gear.cat}}
+            </div>
+            -->
+<!--
         </div>
-    </div> <!-- end of cell -->
-    </div> <!-- end of cell -->
-</div>
+    </div> 
+</div> 
+-->
 
     <!-- end of new stuff -->
 
     <div class="well">
-        <a href="default.htm#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
+        <a href="index.html#/cart" title="go to shopping cart" ng-disabled="cart.getTotalCount() < 1">
             <i class="icon-shopping-cart" />
             <b>{{cart.getTotalCount()}}</b> items, <b>{{cart.getTotalPrice() | currency}}</b>
         </a>
