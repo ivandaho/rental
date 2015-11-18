@@ -138,7 +138,7 @@ shoppingCart.prototype.getHL = function (sku) {
     for (var i = 0; i < this.items.length; i++) {
         var item = this.items[i];
         if (item.sku == sku) {
-            color = "border-color: green";
+            color = "border-color: #08B520";
             break;
         } else {
             color = "border-color: #d5d5d5";
@@ -151,6 +151,8 @@ shoppingCart.prototype.colorize = function (cat) {
     var color;
         if (cat == "camera") {
             color = "#7FC29B";
+        } else if (cat == "tripod") {
+            color = "#A9DDD6";
         } else if (cat == "mic") {
             color = "#B5C2B7";
         }

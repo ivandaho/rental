@@ -10,7 +10,7 @@ var storeApp = angular.module('AngularStore', ['ngRoute']).
         templateUrl: 'partials/store.htm',
         controller: storeController 
       }).
-      when('/products/:productSku', {
+      when('/equipment/:productSku', {
         templateUrl: 'partials/product.htm',
         controller: storeController
       }).

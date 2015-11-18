@@ -1,18 +1,28 @@
 //----------------------------------------------------------------
 // product class
-function product(sku, name, description, price, cal, carot, vitc, folate, potassium, fiber) {
+//function product(sku, name, description, price, cal, carot, vitc, folate, potassium, fiber) {
+function product(sku, brand, name, desc, ava, withwho, maxres, batdur, weight, highlighted, cat) {
     this.sku = sku; // product code (SKU = stock keeping unit)
     this.name = name;
-    this.description = description;
-    this.price = price;
-    this.cal = cal;
-    this.nutrients = {
-        "Carotenoid": carot,
-        "Vitamin C": vitc,
-        "Folates": folate,
-        "Potassium": potassium,
-        "Fiber": fiber
+    //this.description = description;
+    this.price = 1;
+    //this.cal = cal;
+
+    this.specs = {
+        "Capabilities": maxres,
+        "Battery Life": batdur,
+        "Weight": weight,
     };
+
+    this.brand = brand;
+    this.desc = desc;
+    this.ava = ava; // availability
+    this.withwho = withwho;
+    //this.specs = specs;
+    this.batdur = batdur;
+    this.weight = weight;
+    this.highlighted = highlighted;
+    this.cat = cat;
 
 }
 function gear(sku, brand, name, desc, ava, withwho, specs, batdur, weight, highlighted, cat) {

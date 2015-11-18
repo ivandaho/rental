@@ -24,17 +24,17 @@ function storeController($scope, $routeParams, DataService) {
         }
 
         // traverse list
-        for (var i=0, len = $scope.store.equipment.length;
+        for (var i=0, len = $scope.store.products.length;
             i < len; i++ ) {
-            if ($scope.store.equipment[i].sku == sku ) { 
+            if ($scope.store.products[i].sku == sku ) { 
                 // once REACHED
                 // 100% to reach (based on sku)
                 // change highlight if found
                 if (found) {
-                    $scope.store.equipment[i].highlighted = "green";
+                    $scope.store.products[i].highlighted = "green";
                     break;
                 } else {
-                    $scope.store.equipment[i].highlighted = "white";
+                    $scope.store.products[i].highlighted = "white";
                 }
 
             }
