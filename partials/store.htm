@@ -34,21 +34,20 @@
 
 
 <div id="Container" class="container">
-    <div class="testclass {{gear.cat}}" ng-repeat="gear in store.products | orderBy:'cat' | filter:search" 
-                            style="{{cart.getHL(gear.sku)}};
-                                  cursor: pointer;
-                                  background-color: {{cart.colorize(gear.cat)}}"
-                            ng-click="cart.addItem(gear.sku, gear.name, gear.ava, 1); colorchange(gear.sku)"
-                onmouseover = "" >
-            <img class="imgc" ng-src="img/products/{{gear.sku}}.png" alt="{{gear.name}}" />
+    <div class="testclass {{gear.cat}}" ng-repeat="gear in store.products | orderBy:'cat' | filter:search"
+            style="{{cart.getHL(gear.sku)}};
+                cursor: pointer;
+                opacity: {{ cart.getAva(gear.ava) }};
+                background-color: {{cart.colorize(gear.cat, gear.ava)}}"
+            ng-click="cart.addItem(gear.sku, gear.name, 1, gear.ava);
+                colorchange(gear.sku)"
+            onmouseover = "" >
+        <img class="imgc" 
+            ng-src="img/products/{{gear.sku}}.png"
+            alt="{{gear.name}}" />
         <div class="descbox">
             <a href="#/equipment/{{gear.sku}}" ng-click="$event.stopPropagation()"><b>{{gear.brand}} {{gear.name}}</b></a>
             <br>
-            <!--
-            <div class="desctext">
-                {{gear.desc}} {{gear.cat}}
-            </div>
-            -->
         </div>
     </div> <!-- end of cell -->
 </div> <!-- end of container-->

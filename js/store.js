@@ -36,7 +36,7 @@ function store() {
         */
         new product("S4K", "Sony", "4k", "The good sony 4k camera.", true, "nobody", "1920x1080 60fps", "5 hours", "6 lbs", "white", "camera"),
         new product("PA1", "Panasonic", "avc something", "panasonic camera.", true, "nobody", "wsomething80 30fps, 1920x1080 24fps, 1280x720 60fps", "4 hours", "4.5 lbs", "white", "camera"),
-        new product("PA2", "Panasonic", "avc something 2", "other panasonic camera", true, "nobody", "barely decent", "3 hours", "3 lbs", "white", "camera"),
+        new product("PA2", "Panasonic", "avc something 2", "other panasonic camera", false, "nobody", "barely decent", "3 hours", "3 lbs", "white", "camera"),
         new product("MB1", "Audio-Technica", "ATR3350 bundle A", "lapel mic bundle of 2 mics and receivers", true, "nobody", "96khz or something", "10 hours", "1 lbs", "white", "mic"),
         new product("MB2", "Audio-Technica", "ATR3350 bundle B", "lapel mic bundle of 2 mics and receivers", true, "nobody", "96khz or something", "10 hours", "1 lbs", "white", "mic"),
         new product("MZ1", "Zoom", "H1", "stereo microphone", true, "nobody", "96khz or something, stereo", "8 hours", "0.5 lbs", "white", "mic"),

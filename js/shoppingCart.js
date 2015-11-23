@@ -52,7 +52,10 @@ shoppingCart.prototype.testfunc = function () {
     return 0;
 }
 // adds an item to the cart
-shoppingCart.prototype.addItem = function (sku, name, price, quantity) {
+//
+shoppingCart.prototype.addItem = function (sku, name, price, quantity, ava) {
+
+
 
     quantity = this.toNumber(quantity);
     if (quantity != 0) {
@@ -76,6 +79,7 @@ shoppingCart.prototype.addItem = function (sku, name, price, quantity) {
     }
     // save changes
     this.saveItems();
+
 }
 
 
@@ -147,16 +151,26 @@ shoppingCart.prototype.getHL = function (sku) {
     return color;
 }
 
-shoppingCart.prototype.colorize = function (cat) {
+shoppingCart.prototype.colorize = function (cat, ava) {
     var color;
-        if (cat == "camera") {
-            color = "#7FC29B";
-        } else if (cat == "tripod") {
-            color = "#A9DDD6";
-        } else if (cat == "mic") {
-            color = "#B5C2B7";
-        }
+    if (ava == false) {
+        //color = "#000000";
+    } else if (cat == "camera") {
+        color = "#7FC29B";
+    } else if (cat == "tripod") {
+        color = "#A9DDD6";
+    } else if (cat == "mic") {
+        color = "#B5C2B7";
+    }
     return color;
+}
+
+shoppingCart.prototype.getAva = function (ava) {
+    if (ava == true) {
+        return "1";
+    } else {
+        return "0.3";
+    }
 }
 
 // clear the cart
