@@ -60,6 +60,22 @@ button + label{
 .container {
     padding: 10px;
 }
+.container-fluid {
+    width: 50%
+}
+
+.tbLeft {
+    vertical-align: middle;
+    width: 90%;
+}
+.table>tbody>tr>td {
+    vertical-align: middle;
+}
+
+.tbRight {
+    text-align:center;
+    vertical-align:middle;
+}
 
 /* 
 .container {
