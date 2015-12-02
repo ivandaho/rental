@@ -12,8 +12,8 @@ The goal is to make this readable and functional on mobile devices as well as de
 <br>
 #### To do:
 * Get full inventory<br>
-* Display availability of item (greyed out and unclickable if unavailable)<br>
-* Display different categories (camera, mic, tripod, etc), perhaps by color, or other useful stats<br>
+* ~~Display availability of item (greyed out and unclickable if unavailable)~~<br>
+* ~~Display different categories (camera, mic, tripod, etc), perhaps by color, or other useful stats~~<br>
 * Sort by: availability, category, rating, condition<br>
 * Accurate pictures of item<br>
 * Detailed description page with specifications or special notes<br>
